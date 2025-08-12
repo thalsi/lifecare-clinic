@@ -1,86 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+  <head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="LifeCare Medical Website HTML template, built using HTML + CSS + JS, and based on a Figma-style design structure."
+    />
+    <meta
+      name="keywords"
+      content="html, css, js, Lifecare, Mediacal, Clinic, helth"
+    />
+    <meta name="author" content="thalsi" />
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- required meta tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Lifecare Clinic</title>
 
-        <!-- SEO meta tags -->
-        <meta name="description" content="LifeCare Medical Website HTML template, built using HTML + CSS + JS, and based on a Figma-style design structure.">
-        <meta name="keywords" content="html, css, js, Lifecare, Mediacal, Clinic, helth">
-        <meta name="author" content="thalsi">
-        
-        <!-- title -->
-        <title>Lifecare Clinic</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-        <!-- Favicon -->
-        <link rel="icon" href="/favicon.png">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- style -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <!-- Metrial Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---------------- Header ----------------->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- <img
+            src="/assets/lifecare clinic.png"
+            alt="Lifecare clinic"
+            width="162"
+            height="50"
+          /> -->
+          <span class="material-symbols-outlined"> health_cross </span>
+          <p><b>Lifecare <span>Clinic</span></b></p>
+        </a>
 
-        <!---------------- Header ----------------->
-        <header class="header" data-header>
-            <div class="container">
-                <a href="#" class="logo">
-                    <img src="/assets/lifecare clinic.png" alt="Lifecare clinic" width="162" height="50">
-                </a>
+        <nav class="navbar-list" data-navbar-list>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#doctors" class="navbar-link" data-nav-link>Doctors</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#testimonials" class="navbar-link" data-nav-link
+              >Testimonials</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+        </nav>
 
-                <nav class="navbar-list" data-navbar-list>
-                    <li class="navbar-item">
-                        <a href="#home" class="navbar-link active" data-nav-link>Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#about" class="navbar-link" data-nav-link>About</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#services" class="navbar-link" data-nav-link>Services</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#doctors" class="navbar-link" data-nav-link>Doctors</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#testimonials" class="navbar-link" data-nav-link>Testimonials</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-                    </li>
-                </nav>
+        <button
+          class="btn btn-primary"
+          aria-label="Find your doctor"
+          title="Find your doctor"
+        >
+          Find Your Docutor
+        </button>
+      </div>
+    </header>
 
-                <button class="btn btn-primary" aria-label="Find your doctor" title="Find your doctor">Find Your Docutor</button>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Your Health, Our<br />Commitment</h1>
+            <p>
+              Caring for you and your family with compassion and<br />professionalism.
+            </p>
+            <storng><span>Emergency? Call 24x7:</span> +91 98765 43210</storng>
 
+            <button type="button" class="btn btn-primary">
+              Book an Appointment
+            </button>
+            <button type="button" class="btn btn-secondary">
+              Our Services
+            </button>
+          </div>
+          <div class="hero-banner">
+            <img
+              src="/assets/home-page-image.png"
+              alt="Hero banner"
+              height="500px"
+              width="100%"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="cards">
+            <div class="card">
+              <span class="material-symbols-outlined"> science </span>
+              <h3>Diagnostics & Lab Services</h3>
+              <p>
+                Fast, reliable lab testing with advanced diagnostic equipment to
+                ensure accurate results.
+              </p>
             </div>
-        </header>
+            <div class="card">
+              <span class="material-symbols-outlined"> heart_check </span>
+              <h3>Health Checkups</h3>
+              <p>
+                Comprehensive screenings to detect health issues early and
+                promote long-term wellness.
+              </p>
+            </div>
+            <div class="card">
+              <span class="material-symbols-outlined"> ambulance </span>
+              <h3>Emergency Care Support</h3>
+              <p>
+                24/7 emergency services with skilled professionals ready to
+                handle urgent medical needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about"></section>
+      <section id="services" class="services"></section>
+      <section id="doctors" class="doctors"></section>
+      <section id="testimonials" class="testimonials"></section>
+      <section id="contact" class="contact"></section>
+    </main>
 
-        <main>
-            <section id="home" class="hero"></section>
-            <section id="about" class="about"></section>
-            <section id="services" class="services"></section>
-            <section id="doctors" class="doctors"></section>
-            <section id="testimonials" class="testimonials"></section>
-            <section id="contact" class="contact"></section>
-        </main>
+    <!---------------- Footer ----------------->
+    <footer></footer>
 
-        <!---------------- Footer ----------------->
-        <footer></footer>        
-         
-        <!---------------- JS ----------------->
-        <script src="/src/script.js"></script>
-    </body>
+    <!---------------- JS ----------------->
+    <script src="/src/script.js"></script>
+  </body>
 </html>
