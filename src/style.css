@@ -2,6 +2,7 @@
     --primary:hsl(193, 100%, 31%);
     --primary-lite:hsl(193, 98%, 25%);
     --secondary:#007B9E;
+    --secondary-lite:#e6faff;
     --text:black;
     --text-white:white;
     --bg:white;
@@ -40,6 +41,30 @@ h1{
     font-weight: 800;
     line-height: 1.2;
     padding-bottom: 16px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 16px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h4{
+    color: var(--secondary);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .btn{
@@ -195,7 +220,7 @@ h1{
 
 .hero .card .material-symbols-outlined {
     font-size: 38px;
-    color: var(--text);
+    color: var(--secondary);
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
@@ -255,30 +280,6 @@ h1{
     width: 50%;
 }
 
-
-.about .about-content h4{
-    color: var(--secondary);
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-
-.about .about-content h4::after{
-    content: '';
-    width:85px;
-    height: 2px;
-    background: var(--secondary);
-    display: block;
-    border-radius: 8px;
-    margin-top: -1px;
-}
-
-.about .about-content h2{
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-top: 24px;
-}
-
 .about .about-content p{
     margin-top: 8px;
 }
@@ -301,3 +302,116 @@ h1{
     font-size: 20px;
     color: var(--secondary);
 }
+
+.about-content h4::after{
+    content: '';
+    width:85px;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    border-radius: 8px;
+    margin-top: -1px;
+}
+
+/* __________________
+---> Services <---
+*/
+.services{
+    margin-block: 60px;
+    padding-block: 32px;
+    background-color: var(--secondary-lite);
+}
+
+.services-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.services-header h4::after{
+    content: '';
+    width:80px;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    border-radius: 8px;
+    margin-top: -1px;
+}
+
+.services-content {
+    padding: 40px 32px;
+}
+
+.services-grid-items{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 16px;
+    column-gap: 16px;
+    padding: 0 32px;
+}
+
+.services-grid-item {
+    cursor: pointer;
+    padding: 12px;
+    background-color: var(--text-white);
+    border: 0px solid var(--secondary);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-grid-item h5{
+    padding-top: 16px;
+    color: var(--secondary);
+}
+
+.services-grid-item .cycle{
+    background-color: var(--secondary);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: -38px;
+    top: -38px;
+    transition: transform 500ms ease 0s;
+}
+
+.services-grid-item span{
+    font-size: 34px;
+    color: var(--text-white);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 34;
+}
+
+.services-grid-item:hover span{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 34;
+    color: var(--text-white);
+}
+.services-grid-item:hover {
+   color: var(--text-white);
+}
+
+.services-grid-item:hover .cycle{
+   transform: scale(10);
+}
+.services-grid-item:hover h5{
+   color: var(--text-white);
+}
+
+.services-grid-item span,
+.services-grid-item h5,
+.services-grid-item p {
+  position: relative;
+  z-index: 1; /* above the circle */
+}
+
