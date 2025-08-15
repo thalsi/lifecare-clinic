@@ -67,12 +67,26 @@ h5{
     font-weight: 600;
 }
 
+
 .btn{
     cursor: pointer; 
-    height: 32px;
-    padding: 6px 16px;
+    height: 48px;
+    padding: 6px 32px;
     border: 1px solid var(--primary) ;
     border-radius: 4px;
+}
+
+.btn-large{
+    height: 48px;
+    padding: 6px 40px;
+}
+.btn-medium{
+    height: 40px;
+    padding: 6px 32px;
+}
+.btn-small{
+    height: 48px;
+    padding: 6px 32px;
 }
 
 .btn-primary{
@@ -95,6 +109,8 @@ h5{
 .btn-secondary:hover{
     background-color: var(--primary);
     color: var(--text-white);
+    border: 1px solid white;
+    border-radius: 6px;
 }
 
 .logo p{
@@ -180,6 +196,10 @@ h5{
 
 .hero-content storng span{
     color: red;
+}
+
+.hero-content button{
+    margin-top: 18px;
 }
 
 .hero .cards{
@@ -317,7 +337,7 @@ h5{
 ---> Services <---
 */
 .services{
-    margin-block: 60px;
+    margin-block-start: 60px;
     padding-block: 32px;
     background-color: var(--secondary-lite);
 }
@@ -415,3 +435,67 @@ h5{
   z-index: 1; /* above the circle */
 }
 
+/*************************
+* ---> doctors
+**************************/
+
+.doctors{
+    /* margin-block-start: 60px; */
+    padding-block: 32px;
+}
+
+.doctors-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctors-header h4::after{
+    content: '';
+    width:80px;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    border-radius: 8px;
+    margin-top: -1px;
+}
+
+.doctors-content{
+    margin-top: 32px;
+}
+
+.docutor-items{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.docutor-items h5{
+    margin-bottom: 6px;
+}
+
+.docutor-item{
+    padding: 6px;
+    border-radius: 6px ;
+    padding-bottom: 16px;
+}
+.docutor-item:hover{
+    background-color: var(--secondary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--text-white);
+}
+
+.docutor-item:hover button{
+     background-color: var(--text-white);
+    color: var(--secondary);
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.docutor-item button{
+    margin-top: 10px;
+}
