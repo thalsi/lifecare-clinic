@@ -509,3 +509,87 @@ testimonials
     background-color: var(--secondary-lite);
     padding-block: 60px;
 }
+
+.testimonials-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-header h4::after{
+    content: '';
+    width:80px;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    border-radius: 8px;
+    margin-top: -1px;
+}
+
+
+.testimonials-content {
+    margin-inline: 32px;
+    margin-top: 34px;
+}
+
+.testimonials-content .slides{
+    display: flex;
+    padding-block: 62px;
+}
+
+.slides .slide{
+    margin: 6px;
+    padding: 52px 52px 16px 52px;
+    background-color:var(--text-white);
+    border-top: 6px solid var(--secondary);
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.slides .slide  *{
+    text-align: center;
+    padding: 4px;
+}
+
+.slides .slide span{
+    color: var(--secondary-lite);
+     font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 58;
+    font-size: 58px;
+}
+
+.qouate-conatiner{
+    position: relative;
+}
+
+.qouate-conatiner span{
+    position: absolute;
+}
+
+.qouate-conatiner .top{
+    left: -50px;
+    top: -30px;
+    rotate: 180deg;
+}
+.qouate-conatiner .bottam{
+    bottom: -30px;
+    right: -50px;
+    rotate: 0deg;
+}
+
+.slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--text-white);
+    position: absolute;
+    top: -65px;
+    left: 44%;
+    object-fit: fill;
+    padding: 0px !important;
+}
