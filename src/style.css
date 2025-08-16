@@ -499,3 +499,13 @@ h5{
 .docutor-item button{
     margin-top: 10px;
 }
+
+
+/* 
+testimonials
+*/
+
+.testimonials{
+    background-color: var(--secondary-lite);
+    padding-block: 60px;
+}
