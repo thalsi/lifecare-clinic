@@ -453,7 +453,7 @@ h5{
 
 .doctors-header h4::after{
     content: '';
-    width:80px;
+    width:74px;
     height: 2px;
     background: var(--secondary);
     display: block;
@@ -519,7 +519,7 @@ testimonials
 
 .testimonials-header h4::after{
     content: '';
-    width:80px;
+    width:120px;
     height: 2px;
     background: var(--secondary);
     display: block;
@@ -538,6 +538,7 @@ testimonials
     padding-block: 62px;
     justify-content: center;
     align-items: center;
+    column-gap: 12px;
 }
 
 .slides .slide{
@@ -548,10 +549,11 @@ testimonials
     border-radius: 8px;
     position: relative;
     width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-.slides .slide  *{
+.slides .slide *{
     text-align: center;
     padding: 4px;
 }
@@ -598,5 +600,84 @@ testimonials
 }
 
 
+/* 
+contanct
+*/
+.contact{
+    margin-block: 62px;
+    padding-block: 52px;
+}
+
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header h4::after{
+    content: '';
+    width:74px;
+    height: 2px;
+    background: var(--secondary);
+    display: block;
+    border-radius: 8px;
+    margin-top: -1px;
+}
+
+.contact-conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 32px;
+    margin-inline: 58px;
+}
+
+.contact-header p{
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.whatapp{
+    text-align: center;
+}
+
+figure{
+    background-color: var(--secondary-lite);
+}
+
+figcaption{
+    text-align: center;
+    padding: 16px;
+}
+
+figcaption span{
+    vertical-align: text-bottom;
+}
+
+.content-grid-items{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: auto auto; */
+    column-gap:12px;
+    row-gap: 12px;
+    padding: 16px 16px 24px 16px;
+}
+
+.content-grid-item{
+    display: flex;
+    justify-content: center;
+    padding: 16px 40px;
+    border: 1px solid var(--secondary);
+    border-radius: 6px;
+    background-color: var(--secondary);
+    color: var(--text-white);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
 
 
+.content-grid-item .material-symbols-outlined{
+    margin-right: 6px;
+}
