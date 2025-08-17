@@ -319,6 +319,7 @@
           </div>
         </div>
       </section>
+      
       <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="testimonials-header">
@@ -392,6 +393,56 @@
         </div>
       </section>
 
+      <section id="appointment" class="appointment">
+        <div class="conatiner">
+                          <div class="appointment-form">
+              <h3>Make an Appointment</h3>
+              <form id="form" action="submit.php" method="get">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter name" id="name" name="name" value="" maxlength="20" required>
+                <div class="form-group">
+                  <div>
+                    <label for="age">Age</label>
+                    <input type="number" placeholder="Enter age" id="age" name="age" value="" min="1" max="200"  required>
+                  </div>
+                  <div>
+                    <label for="date_time">Date & Time</label>
+                    <input type="date" placeholder="Choose Date & Time" id="date_time" name="date_time" value="" required>
+                  </div>
+                </div>
+
+                <label for="address">Address</label>
+                <textarea placeholder="Enter address" id="address" name="address" value="" rows="4" ></textarea>
+                
+                <label for="mobile_number">Mobile Number</label>
+                <input type="number" placeholder="Enter mobile number" id="mobile_number" name="mobile_number" value="" maxlength="20" required>
+
+                <button type="button" class="btn btn-primary btn-medium">Appointment</button>
+              </form>
+            </div>
+            
+              <div class="appointment-content">
+                <div class="appointment-header">
+                  <h4>Appointment</h4>
+                  <h2>Easy Booking</h2>
+                  <p>
+                   Choose your preferred time slot and book an appointment in just a few clicks.
+                  </p>
+                </div>
+
+                <div class="content">
+                  <span class="material-symbols-outlined">
+                  nest_clock_farsight_analog
+                  </span>
+                  <strong>Monday-Saturday</strong>
+                  <p>Moring - 9:00AM to 1:00 PM</p>
+                  <p>Evening - 4:00PM to 8:00 PM </p>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact">
         <div class="conatiner">
 
@@ -450,6 +501,7 @@ phone_forwarded
               </div>
 
               <div class="whatapp">
+                <img src="/assets/whatsapp.png" alt="whatsapp" width="40" height="40">
                 <strong>Available on WhatsApp Booking</strong>
                  <p><a href="tel:+91 9998 555 444">+91 9998 555 444</a></p>
               </div>
