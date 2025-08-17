@@ -536,6 +536,8 @@ testimonials
 .testimonials-content .slides{
     display: flex;
     padding-block: 62px;
+    justify-content: center;
+    align-items: center;
 }
 
 .slides .slide{
@@ -545,6 +547,7 @@ testimonials
     border-top: 6px solid var(--secondary);
     border-radius: 8px;
     position: relative;
+    width: 25%;
 }
 
 
@@ -589,7 +592,11 @@ testimonials
     border: 5px solid var(--text-white);
     position: absolute;
     top: -65px;
-    left: 44%;
-    object-fit: fill;
+    left: 37%;
+    object-fit: cover;
     padding: 0px !important;
 }
+
+
+
+
