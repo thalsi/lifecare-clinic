@@ -816,5 +816,39 @@ textarea{
 }
 .form-group div:last-of-type{
     flex-grow: 6;
+}
 
+footer .conatiner{
+    padding: 32px;
+    background-color: var(--secondary-lite);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: self-start;
+}
+
+.footer-item .social-media{
+    margin-top: 16px;
+}
+
+.social-media a{
+    padding: 8px;
+}
+
+.footer-item .content-grid-item{
+    border: none;
+    
+}
+.footer-item .content-grid-item:hover{
+    border: none;
+    background-color: var(--secondary-lite);
+    box-shadow: none;
+}
+
+.footer-item .content-grid-item:hover strong{
+    color: var(--secondary);
+}
+
+.footer-item .content-grid-item:hover .material-symbols-outlined{
+    color: var(--secondary);
 }
