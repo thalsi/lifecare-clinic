@@ -852,3 +852,40 @@ footer .conatiner{
 .footer-item .content-grid-item:hover .material-symbols-outlined{
     color: var(--secondary);
 }
+
+.copyright{
+    text-align: center;
+    padding: 16px;
+}
+
+@media (max-width: 600px) {
+ 
+section{
+    display:none;
+}
+    
+footer{
+    display: none;
+}
+
+
+.header .container{
+    padding: 8px;
+    width: 100%;
+}
+
+.header .container .navbar-list{
+    display: none;
+}
+.header .container button{
+    display: none;
+}
+
+.header .container .material-symbols-outlined{
+    font-size:32px;
+}
+.header .container .logo p{
+    font-size:32px;
+}
+
+}
