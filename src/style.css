@@ -24,7 +24,7 @@ body{
     background-color: var(--bg);
     height: 300vh;
     line-height: 1.5;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 li{
@@ -168,6 +168,10 @@ h5{
 .navbar-link:hover, navbar-link.active{
       color: var(--primary);
        font-weight: 600;
+}
+
+.menu-button{
+    display: none;
 }
 
 /* .active{
@@ -882,10 +886,74 @@ footer{
 }
 
 .header .container .material-symbols-outlined{
-    font-size:32px;
+    font-size:30px;
 }
+
 .header .container .logo p{
-    font-size:32px;
+    font-size:20px;
+}
+
+.menu-button{
+    display: block;
+    position: relative;
+}
+
+.menu{
+    background-color: var(--secondary-lite);
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    }
+
+    
+.active{
+    display: block;
+    animation: leftto 300ms ease-in-out forwards;
+}
+
+.closing{
+    display: block;
+    animation: rightto 300ms ease-in-out forwards;
+}
+
+@keyframes rightto {
+    from { left: 0px; opacity: 1; }
+    to { left: -300px; opacity: 0;}
+}
+@keyframes leftto {
+    from { left: -300px; opacity: 0; }
+    to { left: 0px; opacity: 1;}
+}
+
+
+.menu .material-symbols-outlined{
+    font-size: 36px;
+}
+
+.menu .logo p{
+    font-size: 22px;
+}
+
+.menu .navbar-list{
+    margin-top: 24px;
+}
+
+.menu .navbar-list .navbar-item{
+    padding-block: 8px;
+}
+.menu .navbar-list .navbar-item:not(.menu .navbar-list .navbar-item:last-child){
+border-bottom: 1px solid #727272;
+}
+
+.menu-button .material-symbols-outlined{
+    display: none;
+}
+
+.enabled{
+    display: block !important;
 }
 
 }
