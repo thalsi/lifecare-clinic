@@ -862,16 +862,15 @@ footer .conatiner{
     padding: 16px;
 }
 
-@media (max-width: 600px) {
- 
-section{
-    display:none;
-}
-    
-footer{
-    display: none;
+.menu {
+display: none;
 }
 
+@media (max-width: 1200px) {
+
+.dot-right{
+display: none !important;
+}
 
 .header .container{
     padding: 8px;
@@ -954,6 +953,111 @@ border-bottom: 1px solid #727272;
 
 .enabled{
     display: block !important;
+}
+
+.hero .container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.btn{
+    width: 100%;
+}
+
+.highlites .cards{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.about .container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.about-content{
+    width: 80% !important;
+}
+
+.services .conatiner{
+    padding-inline: 24px;
+}
+
+.services-content{
+    padding-inline: 16px;
+}
+
+.services-grid-items{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 0px;
+}
+
+.doctors .docutor-items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.testimonials-content{
+    padding-inline: 0px;
+    margin-inline: 0px;
+}
+
+.testimonials .testimonials-content .slides{
+    display: flex;
+    flex-direction: column;
+    row-gap: 54px;
+}
+
+.slides .slide{
+    width: 100%;
+}
+
+.appointment .conatiner{
+    display: flex;
+    flex-direction: column-reverse;
+     row-gap: 24px;
+}
+
+.contact{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-conatiner{
+    margin-inline: 16px;
+     display: flex;
+    flex-direction: column;
+     row-gap: 24px;
+}
+
+.contact-conatiner img{
+    width: 300px;
+    height: 350px;
+    padding-top: 16px;
+}
+
+.contact-conatiner figure{
+    text-align: center;
+}
+
+.content-grid-items{
+    display: flex;
+    flex-direction: column;
+     row-gap: 24px;
+}
+
+.whatapp img{
+    width: 62px;
+    height: 62px;
+}
+
+footer .conatiner {
+     display: flex;
+    flex-direction: column;
+     row-gap: 24px;
 }
 
 }
